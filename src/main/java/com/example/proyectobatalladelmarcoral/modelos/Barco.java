@@ -45,6 +45,7 @@ public class Barco extends Thread{
         imageView.setFitWidth(100);
         imageView.setFitHeight(100);
 
+
         double sceneWidth = pane.getWidth();
         double msgWidth = imageView.getLayoutBounds().getWidth();
 
