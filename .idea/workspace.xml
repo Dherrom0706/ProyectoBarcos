@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="ewrew">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/acorazado.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/fondo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Destructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +77,7 @@
       <updated>1674041030208</updated>
       <workItem from="1674041031504" duration="3767000" />
       <workItem from="1674459026122" duration="3727000" />
-      <workItem from="1674472205426" duration="1732000" />
+      <workItem from="1674472205426" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary="ewrew">
       <created>1674049583467</created>
@@ -98,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674049583467</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes">
+      <created>1674474770250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674474770250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ewrew" />
-    <option name="LAST_COMMIT_MESSAGE" value="ewrew" />
+    <MESSAGE value="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes" />
+    <option name="LAST_COMMIT_MESSAGE" value="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes" />
   </component>
 </project>
