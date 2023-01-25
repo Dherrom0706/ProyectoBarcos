@@ -13,6 +13,9 @@ public class JuegoApp extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(JuegoApp.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1024 , 764);
+        stage.setMinWidth(1024);
+        stage.setMinHeight(764);
+        stage.setResizable(false);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();

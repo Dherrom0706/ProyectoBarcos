@@ -4,14 +4,19 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.VPos;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.util.Random;
 
 public class Barco extends Thread{
 
@@ -24,6 +29,8 @@ public class Barco extends Thread{
     private int y;
     private String nombre;
     private Pane pane;
+    private final int posXMax = 1024;
+    private final int posYMax = 764;
     public Barco(int vida, int ataque, int sonar, int velocidad, int equipo, int x, int y, String nombre, Pane pane) {
         this.vida = vida;
         this.ataque = ataque;
@@ -41,25 +48,52 @@ public class Barco extends Thread{
         ImageView imageView = new ImageView();
         imageView.setImage(new Image(getClass().getResourceAsStream("/images/acorazado.png")));
         pane.getChildren().add(imageView);
+
         imageView.setLayoutY(VPos.TOP.ordinal());
-        imageView.setFitWidth(100);
-        imageView.setFitHeight(100);
+        imageView.setX(x);
+        imageView.setY(y);
+        imageView.setFitWidth(80);
+        imageView.setFitHeight(80);
 
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
+            double velX = velocidad/2;
+            double velY = velocidad/2;
+            int random;
+            @Override
+            public void handle(ActionEvent event) {
 
-        double sceneWidth = pane.getWidth();
-        double msgWidth = imageView.getLayoutBounds().getWidth();
+                imageView.setX(imageView.getX() + velX);
+                imageView.setY(imageView.getY() + velY);
 
-        KeyValue initKeyValue = new KeyValue(imageView.translateXProperty(), sceneWidth);
-        KeyFrame initFrame = new KeyFrame(Duration.ZERO, initKeyValue);
+                if (imageView.getX() >= posXMax-90 || imageView.getX() <= 0){
+                    velX = velX*(-1);
+                    random = (int) (Math.random()*10+1);
+                    System.out.println(random);
 
-        KeyValue endKeyValue = new KeyValue(imageView.translateXProperty(), -1.0
-                * msgWidth);
-        KeyFrame endFrame = new KeyFrame(Duration.seconds(3), endKeyValue);
+                }
+                if (imageView.getY() >= posYMax-73 || imageView.getY() <= 0){
 
-        Timeline timeline = new Timeline(initFrame, endFrame);
+                    velY = velY*(-1);
+                    random = (int) (Math.random()*10+1);
+                    System.out.println(random);
+                }
 
+                if ((imageView.getX() >= posXMax-90 || imageView.getX() <= 0) && random==2){
+
+                    velY = velY*(-1);
+
+                }
+                if ((imageView.getY() >= posYMax-73 || imageView.getY() <= 0) && random==2){
+
+                    velX = velX*(-1);
+                }
+            }
+        }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
+        if (vida== 0){
+            timeline.stop();
+        }
     }
 /*
 * import javafx.animation.KeyFrame;

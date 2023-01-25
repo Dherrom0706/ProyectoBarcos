@@ -20,7 +20,6 @@ public class JuegoController implements Initializable {
     @FXML
     public Pane panel;
 
-    private ImageView imagenView;
     public Barco barco ;
 
     @Override
