@@ -59,6 +59,7 @@ public class Barco extends Thread{
             double velX = velocidad/2;
             double velY = velocidad/2;
             int random;
+
             @Override
             public void handle(ActionEvent event) {
 

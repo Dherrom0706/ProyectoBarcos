@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
-    </list>
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="funciona movimiento de forma semi aleatoria de los barcos, simplemente cambiar parametros para que se ajusten a cada tipo de barco" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +79,7 @@
       <workItem from="1674459026122" duration="3727000" />
       <workItem from="1674472205426" duration="3136000" />
       <workItem from="1674630380621" duration="607000" />
-      <workItem from="1674635450631" duration="7008000" />
+      <workItem from="1674635450631" duration="7480000" />
     </task>
     <task id="LOCAL-00001" summary="ewrew">
       <created>1674049583467</created>
@@ -114,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674481443315</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="funciona movimiento de forma semi aleatoria de los barcos, simplemente cambiar parametros para que se ajusten a cada tipo de barco">
+      <created>1674647686984</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674647686984</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ewrew" />
     <MESSAGE value="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes" />
-    <option name="LAST_COMMIT_MESSAGE" value="se ha conseguido hacer el movimiento, mirar el video para seguir con movimiento y rebotes" />
+    <MESSAGE value="funciona movimiento de forma semi aleatoria de los barcos, simplemente cambiar parametros para que se ajusten a cada tipo de barco" />
+    <option name="LAST_COMMIT_MESSAGE" value="funciona movimiento de forma semi aleatoria de los barcos, simplemente cambiar parametros para que se ajusten a cada tipo de barco" />
   </component>
 </project>
