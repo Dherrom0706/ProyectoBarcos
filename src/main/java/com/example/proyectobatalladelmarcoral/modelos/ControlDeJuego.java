@@ -44,6 +44,7 @@ public class ControlDeJuego {
                 if ((imageView.getY() >= posYMax-73 || imageView.getY() <= 0) && random==2){
                     velX = velX*(-1);
                 }
+                //metodo de disparo y metodo de sonar
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
