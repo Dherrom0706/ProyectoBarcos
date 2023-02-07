@@ -3,6 +3,7 @@ package com.example.proyectobatalladelmarcoral.modelos.barcos;
 import com.example.proyectobatalladelmarcoral.modelos.Barco;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 public class Submarino extends Barco {
@@ -13,10 +14,10 @@ public class Submarino extends Barco {
     private int equipo; //equipo 1 es rojo y equipo 2 es azul
     private int x;
     private int y;
-    private Pane pane;
+    private AnchorPane pane;
     private final int posXMax = 1024;
     private final int posYMax = 764;
-    public Submarino(int equipo, int x, int y, Pane pane) {
+    public Submarino(int equipo, int x, int y, AnchorPane pane) {
         this.equipo = equipo;
         this.x = x;
         this.y = y;

@@ -10,22 +10,23 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class JuegoController implements Initializable {
-
-
     @FXML
-    public Pane panel;
-
+    public AnchorPane panel;
     public Acorazado acoradazo1;
     public Acorazado acoradazo2;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         panel.setBackground(new Background(new BackgroundImage(new Image(getClass().getResourceAsStream("/images/fondo.jpg")),BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT)));
         acoradazo1 = new Acorazado(1,10,10,panel);
-        acoradazo2 = new Acorazado(1,100,100,panel);
+        acoradazo2 = new Acorazado(1,10,300,panel);
         acoradazo1.start();
         acoradazo2.start();
-        //acoradazo2 = new Acorazado(1,50,50,panel);
 
-        //acoradazo2.mover();
+        try {
+            acoradazo1.join();
+            acoradazo2.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

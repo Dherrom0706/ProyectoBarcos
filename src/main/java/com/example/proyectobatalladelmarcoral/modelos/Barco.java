@@ -24,8 +24,7 @@ public abstract class Barco extends Thread{
     private final int posYMax = 764;
 
 
-    public void mover(int vida,int velocidad,int sonar,int x, int y, int equipo, ImageView imageView){
-
+    public synchronized void mover(int vida,int velocidad,int sonar,int x, int y, int equipo, ImageView imageView){
 
         imageView.setLayoutY(VPos.TOP.ordinal());
         imageView.setX(x);
@@ -33,7 +32,7 @@ public abstract class Barco extends Thread{
         imageView.setFitWidth(80);
         imageView.setFitHeight(80);
 
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000), new EventHandler<ActionEvent>() {
             double velX = velocidad/2;
             double velY = velocidad/2;
             int random;
@@ -41,8 +40,8 @@ public abstract class Barco extends Thread{
             @Override
             public void handle(ActionEvent event) {
 
-                imageView.setX(imageView.getX() + velX);
-                imageView.setY(imageView.getY() + velY);
+                imageView.setX(100);
+                imageView.setY(100);
 
                 if (imageView.getX() >= posXMax-90 || imageView.getX() <= 0){
                     velX = velX*(-1);
@@ -70,6 +69,8 @@ public abstract class Barco extends Thread{
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
+
+
         if (vida== 0){
             timeline.stop();
         }

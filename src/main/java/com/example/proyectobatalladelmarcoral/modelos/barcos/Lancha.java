@@ -1,6 +1,7 @@
 package com.example.proyectobatalladelmarcoral.modelos.barcos;
 
 import com.example.proyectobatalladelmarcoral.modelos.Barco;
+import javafx.application.Platform;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -27,7 +28,12 @@ public class Lancha extends Barco {
         Lancha lancha = new Lancha(1,0,0,pane);
         ImageView imageView = new ImageView();
         imageView.setImage(new Image(getClass().getResourceAsStream("/images/acorazado.png")));
-        pane.getChildren().add(imageView);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                pane.getChildren().add(imageView);
+            }
+        });
         lancha.mover(this.vida,this.velocidad,this.sonar,x,y,this.equipo,imageView);
     }
 }

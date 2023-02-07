@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="ewrew">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Destructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" afterDir="false" />
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="funciona el mover y ademas ya esta gestionado con subclases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/fondo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/fondo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/ProyectoBarcos/src/main/resources/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/ProyectoBarcos/src/main/resources/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcos\src\main\resources\images" />
@@ -85,7 +85,17 @@
       <option name="presentableId" value="Default" />
       <updated>1674041030208</updated>
       <workItem from="1674041031504" duration="3731000" />
+      <workItem from="1675361871992" duration="65000" />
+      <workItem from="1675683094579" duration="2317000" />
     </task>
+    <task id="LOCAL-00001" summary="funciona el mover y ademas ya esta gestionado con subclases">
+      <created>1675079666888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675079666888</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ewrew" />
-    <option name="LAST_COMMIT_MESSAGE" value="ewrew" />
+    <MESSAGE value="funciona el mover y ademas ya esta gestionado con subclases" />
+    <option name="LAST_COMMIT_MESSAGE" value="funciona el mover y ademas ya esta gestionado con subclases" />
   </component>
 </project>
