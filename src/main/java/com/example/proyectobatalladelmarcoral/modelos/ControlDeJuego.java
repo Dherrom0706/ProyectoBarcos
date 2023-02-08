@@ -9,6 +9,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
+import java.lang.Math;
+import javafx.geometry.Bounds;
 
 import java.util.ArrayList;
 
@@ -67,19 +69,32 @@ public class ControlDeJuego {
 
     private void disparo_efecuado(Barco barco, Barco barcoAvistado) {
 
+        
 
     }
 
     private Barco devolver_barco_avistado(ImageView barco_imagen, Barco barco) {
 
         for (Barco barco_actual_lista:barcos_partida) {
-            if (barco.getSonar()*100 >= posicion_relativa_barcos(barco,barco_actual_lista)){
+            Bounds bounds1 = barco_imagen.getBoundsInParent();
+            double centerX1 = bounds1.getMinX() + bounds1.getWidth() / 2;
+            double centerY1 = bounds1.getMinY() + bounds1.getHeight() / 2;
+            Bounds bounds2 = barco_actual_lista.getImagen().getBoundsInParent();
+            double centerX2 = bounds2.getMinX() + bounds2.getWidth() / 2;
+            double centerY2 = bounds2.getMinY() + bounds2.getHeight() / 2;
+
+            double dx = centerX1 - centerX2;
+            double dy = centerY1 - centerY2;
+            double distancia = Math.sqrt(dx * dx + dy * dy);
+
+            if (distancia <= barco.getSonar()){
                 return barco_actual_lista;
             }
         }
 
         return null;
     }
+
 
     private double posicion_relativa_barcos(Barco barco, Barco barco_actual_lista) {
 
