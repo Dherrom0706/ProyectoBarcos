@@ -18,9 +18,10 @@ public class Destructor extends Barco {
 
     ImageView imagen = new ImageView(new Image(JuegoApp.class.getResourceAsStream("images/acorazado.png")));
 
+    public double x = 0;
+    public double y = 0;
     public Destructor() throws URISyntaxException {
     }
-
     @Override
     public int getVida() {
         return 80;
@@ -45,4 +46,26 @@ public class Destructor extends Barco {
     public ImageView getImagen() {
         return imagen;
     }
+
+    @Override
+    public double getX() {
+        return x;
+    }
+
+    @Override
+    public double getY() {
+        return y;
+    }
+
+    @Override
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    @Override
+    public void setY(double y) {
+        this.y = y;
+    }
+
+
 }

@@ -8,6 +8,8 @@ import javafx.scene.layout.Pane;
 
 public class Lancha extends Barco {
 
+    public double x = 0;
+    public double y = 0;
     @Override
     public int getVida() {
         return 0;
@@ -31,5 +33,25 @@ public class Lancha extends Barco {
     @Override
     public ImageView getImagen() {
         return null;
+    }
+
+    @Override
+    public double getX() {
+        return x;
+    }
+
+    @Override
+    public double getY() {
+        return y;
+    }
+
+    @Override
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    @Override
+    public void setY(double y) {
+        this.y = y;
     }
 }

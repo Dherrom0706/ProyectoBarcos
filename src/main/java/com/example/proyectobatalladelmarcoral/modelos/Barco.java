@@ -9,6 +9,9 @@ public abstract class Barco{
     public abstract int getSonar();
     public abstract int getVelocidad();
     public abstract ImageView getImagen();
-
+    public abstract double getX();
+    public abstract double getY();
+    public abstract void setX(double x);
+    public abstract void setY(double y);
 
 }
