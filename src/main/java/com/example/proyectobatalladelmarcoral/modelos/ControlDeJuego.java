@@ -26,6 +26,7 @@ public class ControlDeJuego {
         imageView.setFitWidth(80);
         imageView.setFitHeight(80);
 
+        //hacer un bucle que recorra la lista de barcos y hacer un timeline para cada uno
         timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
             double velX = barco.getVelocidad()/2;
             double velY = barco.getVelocidad()/2;
@@ -56,12 +57,11 @@ public class ControlDeJuego {
                 Barco barco_avistado;
                 if (((barco_avistado = devolver_barco_avistado(imageView,barco)) != null) && (barco_avistado.getEquipo() != barco.getEquipo())){
                     disparo_efecuado(barco,barco_avistado);
-                    System.out.println("hola");
                 }
-
-                if (barco.getVida() <= 0) {
+                if (barco_avistado.getVida() <= 0) {
                     timeline.stop();
                 }
+
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
@@ -93,17 +93,12 @@ public class ControlDeJuego {
             if (distancia <= barco.getSonar()*20){
                 return barco_actual_lista;
             }
+            System.out.println(barcos_partida);
         }
 
         return null;
     }
 
-
-    private double posicion_relativa_barcos(Barco barco, Barco barco_actual_lista) {
-
-       return Math.abs(Math.abs(barco.getX()-barco_actual_lista.getX())-Math.abs(barco.getY()-barco_actual_lista.getY()));
-
-    }
 
     public void aniadir_barco(Barco barco, AnchorPane panel, double x, double y) {
         ImageView imagen = barco.getImagen();

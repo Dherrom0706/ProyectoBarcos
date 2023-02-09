@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="no hace bien el sonar, buscar como hacer bien el calculo">
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="sonar?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Acorazado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Destructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Destructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Lancha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/barcos/Submarino.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +43,15 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcos\src\main\resources\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcos\src\main\resources\com\example\proyectobatalladelmarcoral" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,17 +83,13 @@
       <option name="presentableId" value="Default" />
       <updated>1674041030208</updated>
       <workItem from="1674041031504" duration="3731000" />
-      <workItem from="1675361871992" duration="65000" />
-      <workItem from="1675683094579" duration="2317000" />
-      <workItem from="1675843782370" duration="52000" />
-      <workItem from="1675853764715" duration="3219000" />
     </task>
-    <task id="LOCAL-00001" summary="funciona el mover y ademas ya esta gestionado con subclases">
-      <created>1675079666888</created>
+    <task id="LOCAL-00001" summary="funciona FUNCIONA!">
+      <created>1675794669655</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1675079666888</updated>
+      <updated>1675794669655</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -117,7 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ewrew" />
-    <MESSAGE value="funciona el mover y ademas ya esta gestionado con subclases" />
-    <option name="LAST_COMMIT_MESSAGE" value="funciona el mover y ademas ya esta gestionado con subclases" />
+    <MESSAGE value="funciona FUNCIONA!" />
+    <option name="LAST_COMMIT_MESSAGE" value="funciona FUNCIONA!" />
   </component>
 </project>
