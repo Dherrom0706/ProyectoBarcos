@@ -10,6 +10,8 @@ public class Submarino extends Barco {
 
     public double x = 0;
     public double y = 0;
+    public String equipo = "";
+    public int vida = getVida();
     @Override
     public int getVida() {
         return 0;
@@ -53,5 +55,19 @@ public class Submarino extends Barco {
     @Override
     public void setY(double y) {
         this.y = y;
+    }
+
+    @Override
+    public String getEquipo() {
+        return this.equipo;
+    }
+    @Override
+    public void setEquipo(String equipo) {
+        this.equipo = equipo;
+    }
+
+    @Override
+    public void setVida(int vida) {
+        this.vida = vida;
     }
 }

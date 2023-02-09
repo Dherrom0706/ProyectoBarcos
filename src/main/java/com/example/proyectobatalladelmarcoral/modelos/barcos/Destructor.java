@@ -20,11 +20,13 @@ public class Destructor extends Barco {
 
     public double x = 0;
     public double y = 0;
+    public String equipo = "";
+    public int vida = 80;
     public Destructor() throws URISyntaxException {
     }
     @Override
     public int getVida() {
-        return 80;
+        return this.vida;
     }
 
     @Override
@@ -67,5 +69,16 @@ public class Destructor extends Barco {
         this.y = y;
     }
 
+    @Override
+    public String getEquipo() {
+        return this.equipo;
+    }
+    @Override
+    public void setEquipo(String equipo) {
+        this.equipo = equipo;
+    }
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
 
 }

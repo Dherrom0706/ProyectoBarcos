@@ -19,13 +19,14 @@ public class ControlDeJuego {
     private int posYMax = 764;
 
     ArrayList<Barco> barcos_partida = new ArrayList<>();
+    private Timeline timeline;
     public void mover(Barco barco){
 
         ImageView imageView = barco.getImagen();
         imageView.setFitWidth(80);
         imageView.setFitHeight(80);
 
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
+        timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
             double velX = barco.getVelocidad()/2;
             double velY = barco.getVelocidad()/2;
             int random;
@@ -53,23 +54,25 @@ public class ControlDeJuego {
                 }
                 //metodo de disparo y metodo de sonar
                 Barco barco_avistado;
-                if ((barco_avistado = devolver_barco_avistado(imageView,barco)) != null){
-                    System.out.println(devolver_barco_avistado(imageView,barco));
+                if (((barco_avistado = devolver_barco_avistado(imageView,barco)) != null) && (barco_avistado.getEquipo() != barco.getEquipo())){
                     disparo_efecuado(barco,barco_avistado);
+                    System.out.println("hola");
                 }
 
+                if (barco.getVida() <= 0) {
+                    timeline.stop();
+                }
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
-        if (barco.getVida() == 0){
-            timeline.stop();
-        }
     }
 
     private void disparo_efecuado(Barco barco, Barco barcoAvistado) {
 
-        
+        barcoAvistado.setVida(barcoAvistado.getVida()-barco.getAtaque());
+        System.out.println("Barco que dispara: "+barco.getVida());
+        System.out.println("Barco que recibe: "+barcoAvistado.getVida());
 
     }
 
@@ -87,7 +90,7 @@ public class ControlDeJuego {
             double dy = centerY1 - centerY2;
             double distancia = Math.sqrt(dx * dx + dy * dy);
 
-            if (distancia <= barco.getSonar()){
+            if (distancia <= barco.getSonar()*20){
                 return barco_actual_lista;
             }
         }

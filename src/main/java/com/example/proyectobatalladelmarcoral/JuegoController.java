@@ -25,6 +25,8 @@ public class JuegoController implements Initializable {
         try {
             destructor1 = new Destructor();
             destructor2 = new Destructor();
+            destructor1.setEquipo("Rojo");
+            destructor2.setEquipo("Azul");
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
