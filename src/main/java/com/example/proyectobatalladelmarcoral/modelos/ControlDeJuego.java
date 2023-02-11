@@ -60,6 +60,7 @@ public class ControlDeJuego {
                     timeline.stop();
                 }
 
+
             }
         }));
         timeline.setCycleCount(Timeline.INDEFINITE);
