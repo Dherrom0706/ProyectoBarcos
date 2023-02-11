@@ -1,6 +1,5 @@
 package com.example.proyectobatalladelmarcoral.modelos;
 
-import com.example.proyectobatalladelmarcoral.modelos.barcos.Acorazado;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -20,12 +19,11 @@ public class ControlDeJuego {
 
     ArrayList<Barco> barcos_partida = new ArrayList<>();
     private Timeline timeline;
-    public void mover(Barco barco){
+    public synchronized void mover(Barco barco){
 
         ImageView imageView = barco.getImagen();
         imageView.setFitWidth(80);
         imageView.setFitHeight(80);
-
         //hacer un bucle que recorra la lista de barcos y hacer un timeline para cada uno
         timeline = new Timeline(new KeyFrame(Duration.millis(10), new EventHandler<ActionEvent>() {
             double velX = barco.getVelocidad()/2;
@@ -68,7 +66,7 @@ public class ControlDeJuego {
         timeline.play();
     }
 
-    private void disparo_efecuado(Barco barco, Barco barcoAvistado) {
+    private synchronized void disparo_efecuado(Barco barco, Barco barcoAvistado) {
 
         barcoAvistado.setVida(barcoAvistado.getVida()-barco.getAtaque());
         System.out.println("Barco que dispara: "+barco.getVida());
@@ -76,7 +74,7 @@ public class ControlDeJuego {
 
     }
 
-    private Barco devolver_barco_avistado(ImageView barco_imagen, Barco barco) {
+    private synchronized Barco devolver_barco_avistado(ImageView barco_imagen, Barco barco) {
 
         for (Barco barco_actual_lista:barcos_partida) {
             Bounds bounds1 = barco_imagen.getBoundsInParent();
@@ -93,14 +91,13 @@ public class ControlDeJuego {
             if (distancia <= barco.getSonar()*20){
                 return barco_actual_lista;
             }
-            System.out.println(barcos_partida);
         }
 
         return null;
     }
 
 
-    public void aniadir_barco(Barco barco, AnchorPane panel, double x, double y) {
+    public synchronized void aniadir_barco(Barco barco, AnchorPane panel, double x, double y) {
         ImageView imagen = barco.getImagen();
         barcos_partida.add(barco);
         barco.setX(x);

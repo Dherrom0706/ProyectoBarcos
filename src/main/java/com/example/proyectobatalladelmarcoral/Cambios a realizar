@@ -1,0 +1,5 @@
+09/02/2023
+los barcos mueren pero se le hace overbukin hay que quitarlo de la lista de barcos cuando su vida sea 0,
+asi no podrá encontrar ese barco
+10/02/2023
+los barcos se encuentran y se bajan la vida, pero cuando uno muere los demas ya no se mueren
