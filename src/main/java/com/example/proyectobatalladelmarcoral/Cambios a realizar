@@ -41,3 +41,6 @@ guardado de metodo mover en control de juego por si acaso, actualmente se utiliz
     if (((barco_avistado = devolver_barco_avistado(imageView,barco)) != null) && (barco_avistado.getEquipo() != barco.getEquipo())){
         disparo_efecuado(barco,barco_avistado);
     }*/
+
+    parece que funcionan los hilos para
+     hacer que los barcos se muevan y disparen bien, hacer la recarga y los porcentajes de daños estan hechos
