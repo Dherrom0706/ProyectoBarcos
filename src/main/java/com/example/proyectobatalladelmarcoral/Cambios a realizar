@@ -3,3 +3,41 @@ los barcos mueren pero se le hace overbukin hay que quitarlo de la lista de barc
 asi no podrá encontrar ese barco
 10/02/2023
 los barcos se encuentran y se bajan la vida, pero cuando uno muere los demas ya no se mueren
+13/02/2023
+guardado de metodo mover en control de juego por si acaso, actualmente se utiliza un metodo mover en barco
+/*public synchronized void mover(Barco barco){
+
+        ImageView imageView = barco.getImagen();
+        imageView.setFitWidth(80);
+        imageView.setFitHeight(80);
+
+        double velX = barco.getVelocidad()/2;
+        double velY = barco.getVelocidad()/2;
+        int random = 0;
+        double newX = imageView.getX() + velX;
+        double newY = imageView.getY() + velY;
+        if (newX >= posXMax-90 || newX <= 0){
+            velX = velX*(-1);
+            random = (int) (Math.random()*10+1);
+            System.out.println(random);
+        }
+        if (newY >= posYMax-73 || newY <= 0){
+            velY = velY*(-1);
+            random = (int) (Math.random()*10+1);
+            System.out.println(random);
+        }
+        if ((newX >= posXMax-90 || newX <= 0) && random==2){
+            velY = velY*(-1);
+        }
+        if ((newY >= posYMax-73 || newY <= 0) && random==2){
+            velX = velX*(-1);
+        }
+        //barco.setVelocidad(velX, velY);
+        imageView.setX(newX);
+        imageView.setY(newY);
+
+        //metodo de disparo y metodo de sonar
+        Barco barco_avistado;
+    if (((barco_avistado = devolver_barco_avistado(imageView,barco)) != null) && (barco_avistado.getEquipo() != barco.getEquipo())){
+        disparo_efecuado(barco,barco_avistado);
+    }*/

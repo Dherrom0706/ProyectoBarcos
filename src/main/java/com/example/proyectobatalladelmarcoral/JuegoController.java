@@ -26,7 +26,6 @@ public class JuegoController implements Initializable {
         Barco barco3;
         Barco barco4;
 
-
         barco1 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"rojo");
         barco2 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"rojo");
         barco3 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"azul");
@@ -37,14 +36,7 @@ public class JuegoController implements Initializable {
         control.aniadir_barco(barco3, panel, 900,200);
         control.aniadir_barco(barco4, panel, 900,100);
 
-        control.mover(barco1);
-        control.mover(barco2);
-        control.mover(barco3);
-        control.mover(barco4);
-
-
-
-
+        control.comenzar_partida();
 
     }
 }
