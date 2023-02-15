@@ -17,6 +17,7 @@ public class Barco{
     private double velY;
     private int posXMax = 1024;
     private int posYMax = 764;
+    private int recarga = 0;
 
     public Barco(double vida, int sonar, int velocidad, int ataque, ImageView imageView, String equipo) {
         this.vida = vida;
@@ -50,7 +51,6 @@ public class Barco{
     public ImageView getImagen() {
         return imageView;
     }
-
     public double getX() {
         return x;
     }
@@ -66,6 +66,11 @@ public class Barco{
     public void setVida(double vida) {
         this.vida = vida;
     }
+
+    public int getRecarga() { return recarga; }
+
+    public void setRecarga(int recarga) { this.recarga = recarga; }
+
     public void mover() {
         double random = Math.random();
         imageView.setX(imageView.getX() + velX);
