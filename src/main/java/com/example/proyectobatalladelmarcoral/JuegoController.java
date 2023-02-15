@@ -28,19 +28,19 @@ public class JuegoController implements Initializable {
         Barco barco5;
         Barco barco6;
 
-        barco1 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"rojo");
-        barco2 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"rojo");
-        barco3 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"azul");
-        barco4 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado.png"))),"azul");
-        barco5 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha.png"))),"rojo");
-        barco6 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha.png"))),"azul");
+        barco1 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
+        barco2 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_roja.png"))),"rojo","lancha");
+        barco3 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_azul.png"))),"azul","acorazado");
+        barco4 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_azul.png"))),"azul","lancha");
+        barco5 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_roja.png"))),"rojo","lancha");
+        barco6 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_azul.png"))),"azul","lancha");
 
         control.aniadir_barco(barco1, panel, 100, 40);
         control.aniadir_barco(barco2, panel, 100,100);
-        control.aniadir_barco(barco3, panel, 900,200);
-        control.aniadir_barco(barco4, panel, 900,100);
+        control.aniadir_barco(barco3, panel, 850,200);
+        control.aniadir_barco(barco4, panel, 850,100);
         control.aniadir_barco(barco5, panel, 100,300);
-        control.aniadir_barco(barco6, panel, 900,300);
+        control.aniadir_barco(barco6, panel, 850,300);
 
         control.comenzar_partida();
 

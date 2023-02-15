@@ -18,8 +18,13 @@ public class Barco{
     private int posXMax = 1024;
     private int posYMax = 764;
     private int recarga = 0;
+    private String tipo;
+    private int xDer;
+    private int yAbajo;
 
-    public Barco(double vida, int sonar, int velocidad, int ataque, ImageView imageView, String equipo) {
+    private int xIzq;
+    private int yArriba;
+    public Barco(double vida, int sonar, int velocidad, int ataque, ImageView imageView, String equipo,String tipo) {
         this.vida = vida;
         this.sonar = sonar;
         this.velocidad = velocidad;
@@ -30,6 +35,23 @@ public class Barco{
         this.y = imageView.getY();
         this.velX = velocidad / 2;
         this.velY = velocidad / 2;
+        this.tipo = tipo;
+
+        if (this.tipo.equals("lancha")){
+            this.imageView.setFitWidth(120);
+            this.imageView.setFitHeight(40);
+            xDer = 90;
+            yAbajo = 73;
+            yArriba = 0;
+            xIzq = 0;
+        } else if (this.tipo.equals("acorazado")){
+            this.imageView.setFitWidth(220);
+            this.imageView.setFitHeight(80);
+            xDer = 160;
+            yAbajo = 92;
+            xIzq = -35;
+            yArriba =22;
+        }
     }
 
     public double getVida() {
@@ -72,25 +94,30 @@ public class Barco{
     public void setRecarga(int recarga) { this.recarga = recarga; }
 
     public void mover() {
+
         double random = Math.random();
         imageView.setX(imageView.getX() + velX);
-        imageView.setFitWidth(80);
-        imageView.setFitHeight(80);
         x = x + velX;
-        if (imageView.getX() >= posXMax - 90 || imageView.getX() <= 0) {
+        if (imageView.getX() >= posXMax - xDer || imageView.getX() <= xIzq) {
             velX = velX * -1;
             if (random < 0.2) {
                 velY = velY * -1;
             }
         }
+
         imageView.setY(imageView.getY() + velY);
         y = y + velY;
-        if (imageView.getY() >= posYMax - 73 || imageView.getY() <= 0) {
+        if (imageView.getY() >= posYMax - yAbajo || imageView.getY() <= yArriba) {
             velY = velY * -1;
             if (random < 0.2) {
                 velX = velX * -1;
             }
         }
+
+        // Rotar la imagen según la dirección del movimiento
+        double angle = Math.toDegrees(Math.atan2(velY, velX));
+        imageView.setRotate(angle);
+
     }
 
 }
