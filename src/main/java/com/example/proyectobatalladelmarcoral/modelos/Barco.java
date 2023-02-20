@@ -59,7 +59,6 @@ public class Barco{
             xIzq = -35;
             yArriba =22;
         }
-
     }
 
     public double getVida() {
