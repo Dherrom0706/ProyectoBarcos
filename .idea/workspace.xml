@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="parece que funcionan los hilos para hacer que los barcos se muevan y disparen bien, hacer la recarga y los porcentajes de daños estan hechos">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/acorazado_azul.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/acorazado_rojo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/lancha_azul.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/lancha_roja.png" afterDir="false" />
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="acorazado y lancha funcionando, añadido de imagen de destructor para comprobar que tal queda">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/destructor_azul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/destructor_rojo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/acorazado.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/lancha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyectobatalladelmarcoral/images/coger_destructor_de_este_modelo.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/ProyectoBarcosNew/src/main/resources/com/example/proyectobatalladelmarcoral/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/IdeaProjects/ProyectoBarcos/src/main/resources/com/example/proyectobatalladelmarcoral/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,6 +60,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcos\src\main\resources\com\example\proyectobatalladelmarcoral\images" />
       <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcosNew\src\main\resources\com\example\proyectobatalladelmarcoral\images" />
       <recent name="C:\Users\Usuario\IdeaProjects\ProyectoBarcos\src\main\resources\images" />
     </key>
@@ -108,7 +105,8 @@
       <workItem from="1676034044043" duration="604000" />
       <workItem from="1676280901758" duration="5772000" />
       <workItem from="1676458185186" duration="5761000" />
-      <workItem from="1676486461167" duration="7696000" />
+      <workItem from="1676486461167" duration="7788000" />
+      <workItem from="1676925716412" duration="568000" />
     </task>
     <task id="LOCAL-00001" summary="funciona el mover y ademas ya esta gestionado con subclases">
       <created>1675079666888</created>
@@ -131,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676289081514</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="acorazado y lancha funcionando">
+      <created>1676497796589</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676497796589</updated>
+    </task>
+    <task id="LOCAL-00005" summary="acorazado y lancha funcionando, añadido de imagen de destructor para comprobar que tal queda">
+      <created>1676497864099</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676497864099</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +164,8 @@
     <MESSAGE value="ewrew" />
     <MESSAGE value="funciona el mover y ademas ya esta gestionado con subclases" />
     <MESSAGE value="parece que funcionan los hilos para hacer que los barcos se muevan y disparen bien, hacer la recarga y los porcentajes de daños estan hechos" />
-    <option name="LAST_COMMIT_MESSAGE" value="parece que funcionan los hilos para hacer que los barcos se muevan y disparen bien, hacer la recarga y los porcentajes de daños estan hechos" />
+    <MESSAGE value="acorazado y lancha funcionando" />
+    <MESSAGE value="acorazado y lancha funcionando, añadido de imagen de destructor para comprobar que tal queda" />
+    <option name="LAST_COMMIT_MESSAGE" value="acorazado y lancha funcionando, añadido de imagen de destructor para comprobar que tal queda" />
   </component>
 </project>

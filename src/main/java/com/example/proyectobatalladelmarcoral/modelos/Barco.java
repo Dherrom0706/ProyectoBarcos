@@ -51,7 +51,15 @@ public class Barco{
             yAbajo = 92;
             xIzq = -35;
             yArriba =22;
+        } else if (this.tipo.equals("destructor")){
+            this.imageView.setFitWidth(220);
+            this.imageView.setFitHeight(60);
+            xDer = 160;
+            yAbajo = 92;
+            xIzq = -35;
+            yArriba =22;
         }
+
     }
 
     public double getVida() {
