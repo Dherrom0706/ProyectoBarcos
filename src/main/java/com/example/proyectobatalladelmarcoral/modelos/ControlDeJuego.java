@@ -46,7 +46,7 @@ public class ControlDeJuego {
         double dmg;
 
         if (barco.getRecarga() >= 5000){
-            System.out.println(barco.getRecarga());
+
             if (r < 0.25){
                 dmg = 0.0;
             } else if (r < 0.50) {
@@ -68,7 +68,6 @@ public class ControlDeJuego {
                 }
             }
         }
-
     }
 
     private void barco_avistado(Barco barco) {

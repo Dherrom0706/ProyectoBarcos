@@ -58,6 +58,13 @@ public class Barco{
             yAbajo = 92;
             xIzq = -35;
             yArriba =22;
+        }else if (this.tipo.equals("submarino")){
+            this.imageView.setFitWidth(140);
+            this.imageView.setFitHeight(40);
+            xDer = 90;
+            yAbajo = 73;
+            yArriba = 0;
+            xIzq = 0;
         }
     }
 

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="destructor">
+    <list default="true" id="95775470-a200-4cc3-8c26-1938dff3fb1b" name="Changes" comment="submarino">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/JuegoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/Barco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyectobatalladelmarcoral/modelos/ControlDeJuego.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,8 @@
       <workItem from="1676280901758" duration="5772000" />
       <workItem from="1676458185186" duration="5761000" />
       <workItem from="1676486461167" duration="7788000" />
-      <workItem from="1676925716412" duration="1628000" />
+      <workItem from="1676925716412" duration="2255000" />
+      <workItem from="1677001321186" duration="2073000" />
     </task>
     <task id="LOCAL-00001" summary="funciona el mover y ademas ya esta gestionado con subclases">
       <created>1675079666888</created>
@@ -146,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676926301455</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="submarino">
+      <created>1676928033025</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676928033025</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +180,7 @@
     <MESSAGE value="acorazado y lancha funcionando" />
     <MESSAGE value="acorazado y lancha funcionando, añadido de imagen de destructor para comprobar que tal queda" />
     <MESSAGE value="destructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="destructor" />
+    <MESSAGE value="submarino" />
+    <option name="LAST_COMMIT_MESSAGE" value="submarino" />
   </component>
 </project>

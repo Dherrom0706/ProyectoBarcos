@@ -27,6 +27,8 @@ public class JuegoController implements Initializable {
         Barco barco4;
         Barco barco5;
         Barco barco6;
+        Barco barco7;
+        Barco barco8;
 
         barco1 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
         barco2 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_roja.png"))),"rojo","lancha");
@@ -34,6 +36,8 @@ public class JuegoController implements Initializable {
         barco4 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_azul.png"))),"azul","lancha");
         barco5 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/destructor_rojo.png"))),"rojo","destructor");
         barco6 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/destructor_azul.png"))),"azul","destructor");
+        barco7 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/submarinos_rojo.png"))),"rojo","submarino");
+        barco8 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/submarino_azul.png"))),"azul","submarino");
 
         control.aniadir_barco(barco1, panel, 100, 40);
         control.aniadir_barco(barco2, panel, 100,100);
@@ -41,7 +45,8 @@ public class JuegoController implements Initializable {
         control.aniadir_barco(barco4, panel, 850,100);
         control.aniadir_barco(barco5, panel, 100,300);
         control.aniadir_barco(barco6, panel, 850,300);
-
+        control.aniadir_barco(barco7, panel, 100,400);
+        control.aniadir_barco(barco8, panel, 850,400);
         control.comenzar_partida();
 
     }
