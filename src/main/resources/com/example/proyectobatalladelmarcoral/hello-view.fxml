@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.image.Image?>
@@ -13,14 +14,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<?import java.net.URL?>
-<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobatalladelmarcoral.JuegoController">
+<AnchorPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectobatalladelmarcoral.JuegoController">
    <stylesheets>
       <URL value="@estilos/estilos.css" />
    </stylesheets>
    <children>
-      <VBox prefHeight="588.0" prefWidth="1024.0" />
-      <HBox layoutY="588.0" prefHeight="182.0" prefWidth="1024.0">
+      <VBox fx:id="fondo_oceano" prefHeight="769.0" prefWidth="1024.0" />
+      <HBox layoutY="768.0" prefHeight="182.0" prefWidth="1024.0">
          <children>
             <GridPane fx:id="panel_rojo" prefHeight="182.0" prefWidth="350.0">
               <columnConstraints>

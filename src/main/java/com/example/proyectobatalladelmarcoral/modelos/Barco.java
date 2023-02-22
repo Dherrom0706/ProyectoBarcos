@@ -48,7 +48,7 @@ public class Barco{
             this.imageView.setFitWidth(220);
             this.imageView.setFitHeight(80);
             xDer = 160;
-            yAbajo = 92;
+            yAbajo = 110;
             xIzq = -35;
             yArriba =22;
         } else if (this.tipo.equals("destructor")){

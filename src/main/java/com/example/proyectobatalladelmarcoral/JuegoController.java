@@ -1,6 +1,7 @@
 package com.example.proyectobatalladelmarcoral;
 
 import com.example.proyectobatalladelmarcoral.modelos.Barco;
+import com.example.proyectobatalladelmarcoral.modelos.BarcoInterfaz;
 import com.example.proyectobatalladelmarcoral.modelos.ControlDeJuego;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -22,60 +23,63 @@ public class JuegoController implements Initializable {
     @FXML
     private GridPane panel_rojo;
     @FXML
-    private ProgressBar barra_acorazado_rojo;
+    public ProgressBar barra_acorazado_rojo;
     @FXML
-    private ProgressBar barra_destructor_rojo;
+    public ProgressBar barra_destructor_rojo;
     @FXML
-    private ProgressBar barra_lancha_roja;
+    public ProgressBar barra_lancha_roja;
     @FXML
-    private ProgressBar barra_submarino_rojo;
+    public ProgressBar barra_submarino_rojo;
     @FXML
-    private Label lb_vida_acorazado_rojo;
+    public Label lb_vida_acorazado_rojo;
     @FXML
-    private Label lb_vida_destructor_rojo;
+    public Label lb_vida_destructor_rojo;
     @FXML
-    private Label lb_vida_lancha_rojo;
+    public Label lb_vida_lancha_rojo;
     @FXML
-    private Label lb_vida_submarino_rojo;
+    public Label lb_vida_submarino_rojo;
     @FXML
-    private ImageView reload_acorazado_rojo;
+    public ImageView reload_acorazado_rojo;
     @FXML
-    private ImageView reload_destructor_rojo;
+    public ImageView reload_destructor_rojo;
     @FXML
-    private ImageView reload_lancha_rojo;
+    public ImageView reload_lancha_rojo;
     @FXML
-    private ImageView reload_submarino_rojo;
+    public ImageView reload_submarino_rojo;
     @FXML
-    private GridPane panel_azul;
+    public GridPane panel_azul;
     @FXML
-    private ProgressBar barra_acorazado_azul;
+    public ProgressBar barra_acorazado_azul;
     @FXML
-    private ProgressBar barra_destructor_azul;
+    public ProgressBar barra_destructor_azul;
     @FXML
-    private ProgressBar barra_lancha_lancha;
+    public ProgressBar barra_lancha_lancha;
     @FXML
-    private ProgressBar barra_submarino_submarino;
+    public ProgressBar barra_submarino_submarino;
     @FXML
-    private Label lb_vida_acorazado_azul;
+    public Label lb_vida_acorazado_azul;
     @FXML
-    private Label lb_vida_destructor_azul;
+    public Label lb_vida_destructor_azul;
     @FXML
-    private Label lb_vida_lancha_azul;
+    public Label lb_vida_lancha_azul;
     @FXML
-    private Label lb_vida_submarino_azul;
+    public Label lb_vida_submarino_azul;
     @FXML
     private ImageView reload_acorazado_azul;
     @FXML
-    private ImageView reload_destructor_azul;
+    public ImageView reload_destructor_azul;
     @FXML
-    private ImageView reload_lancha_azul;
+    public ImageView reload_lancha_azul;
     @FXML
-    private ImageView reload_submarino_azul;
+    public ImageView reload_submarino_azul;
+    @FXML
+    private Pane panel_intermedio;
+    @FXML
+    private VBox fondo_oceano;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        panel.setBackground(new Background(new BackgroundImage(new Image(getClass().getResourceAsStream("images/fondo.jpg")),BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT)));
         Barco barco1;
         Barco barco2;
         Barco barco3;
@@ -84,6 +88,16 @@ public class JuegoController implements Initializable {
         Barco barco6;
         Barco barco7;
         Barco barco8;
+
+        BarcoInterfaz barcoInterfaz1;
+        BarcoInterfaz barcoInterfaz2;
+        BarcoInterfaz barcoInterfaz3;
+        BarcoInterfaz barcoInterfaz4;
+        BarcoInterfaz barcoInterfaz5;
+        BarcoInterfaz barcoInterfaz6;
+        BarcoInterfaz barcoInterfaz7;
+        BarcoInterfaz barcoInterfaz8;
+
 
         barco1 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
         barco3 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_azul.png"))),"azul","acorazado");
@@ -103,13 +117,7 @@ public class JuegoController implements Initializable {
         control.aniadir_barco(barco7, panel, 100,400);
         control.aniadir_barco(barco8, panel, 850,400);
 
-
         control.comenzar_partida();
-
-        establecer_vidas();
-    }
-
-    public void establecer_vidas(){
 
     }
 

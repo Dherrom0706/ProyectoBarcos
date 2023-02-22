@@ -8,3 +8,6 @@
     -fx-background-image: url("../images/fondo_intermedio.jpg");
     -fx-background-size: cover;
 }
+#fondo_oceano{
+    -fx-background-image: url("../images/fondo.jpg");
+}

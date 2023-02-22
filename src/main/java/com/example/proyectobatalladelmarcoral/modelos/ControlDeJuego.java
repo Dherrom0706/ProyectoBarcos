@@ -17,7 +17,7 @@ public class ControlDeJuego {
     private int posYMax = 764;
     private int cantidadBarcosRojos;
     private int cantidadBarcosAzules;
-    ArrayList<Barco> barcos_partida = new ArrayList<>();
+    public ArrayList<Barco> barcos_partida = new ArrayList<>();
     HashMap<Barco,Timeline> mapa_barcos_timeline = new HashMap<>();
     Timeline timeline;
 
@@ -32,6 +32,7 @@ public class ControlDeJuego {
                 barco.mover();
                 barco_avistado(barco);
                 barco.setRecarga(barco.getRecarga() + 10);
+
             }));
             mapa_barcos_timeline.put(barco,timeline);
             timeline.setCycleCount(Timeline.INDEFINITE);
@@ -45,7 +46,7 @@ public class ControlDeJuego {
         double r = Math.random();
         double dmg;
 
-        if (barco.getRecarga() >= 5000){
+        if (barco.getRecarga() >= 5000 && barco.getVida() > 0){
 
             if (r < 0.25){
                 dmg = 0.0;
