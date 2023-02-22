@@ -5,6 +5,8 @@ import com.example.proyectobatalladelmarcoral.modelos.ControlDeJuego;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -17,6 +19,59 @@ public class JuegoController implements Initializable {
     @FXML
     public AnchorPane panel;
     ControlDeJuego control = new ControlDeJuego();
+    @FXML
+    private GridPane panel_rojo;
+    @FXML
+    private ProgressBar barra_acorazado_rojo;
+    @FXML
+    private ProgressBar barra_destructor_rojo;
+    @FXML
+    private ProgressBar barra_lancha_roja;
+    @FXML
+    private ProgressBar barra_submarino_rojo;
+    @FXML
+    private Label lb_vida_acorazado_rojo;
+    @FXML
+    private Label lb_vida_destructor_rojo;
+    @FXML
+    private Label lb_vida_lancha_rojo;
+    @FXML
+    private Label lb_vida_submarino_rojo;
+    @FXML
+    private ImageView reload_acorazado_rojo;
+    @FXML
+    private ImageView reload_destructor_rojo;
+    @FXML
+    private ImageView reload_lancha_rojo;
+    @FXML
+    private ImageView reload_submarino_rojo;
+    @FXML
+    private GridPane panel_azul;
+    @FXML
+    private ProgressBar barra_acorazado_azul;
+    @FXML
+    private ProgressBar barra_destructor_azul;
+    @FXML
+    private ProgressBar barra_lancha_lancha;
+    @FXML
+    private ProgressBar barra_submarino_submarino;
+    @FXML
+    private Label lb_vida_acorazado_azul;
+    @FXML
+    private Label lb_vida_destructor_azul;
+    @FXML
+    private Label lb_vida_lancha_azul;
+    @FXML
+    private Label lb_vida_submarino_azul;
+    @FXML
+    private ImageView reload_acorazado_azul;
+    @FXML
+    private ImageView reload_destructor_azul;
+    @FXML
+    private ImageView reload_lancha_azul;
+    @FXML
+    private ImageView reload_submarino_azul;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -30,14 +85,14 @@ public class JuegoController implements Initializable {
         Barco barco7;
         Barco barco8;
 
-        barco1 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
-        barco2 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_roja.png"))),"rojo","lancha");
-        barco3 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_azul.png"))),"azul","acorazado");
-        barco4 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_azul.png"))),"azul","lancha");
+        barco1 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
+        barco3 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_azul.png"))),"azul","acorazado");
+        barco2 = new Barco(10,12,10,20,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_roja.png"))),"rojo","lancha");
+        barco4 = new Barco(10,12,10,20,new ImageView(new Image(getClass().getResourceAsStream("images/lancha_azul.png"))),"azul","lancha");
         barco5 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/destructor_rojo.png"))),"rojo","destructor");
         barco6 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/destructor_azul.png"))),"azul","destructor");
-        barco7 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/submarinos_rojo.png"))),"rojo","submarino");
-        barco8 = new Barco(80,15,5,50,new ImageView(new Image(getClass().getResourceAsStream("images/submarino_azul.png"))),"azul","submarino");
+        barco7 = new Barco(30,15,2,60,new ImageView(new Image(getClass().getResourceAsStream("images/submarinos_rojo.png"))),"rojo","submarino");
+        barco8 = new Barco(30,15,2,60,new ImageView(new Image(getClass().getResourceAsStream("images/submarino_azul.png"))),"azul","submarino");
 
         control.aniadir_barco(barco1, panel, 100, 40);
         control.aniadir_barco(barco2, panel, 100,100);
@@ -47,7 +102,15 @@ public class JuegoController implements Initializable {
         control.aniadir_barco(barco6, panel, 850,300);
         control.aniadir_barco(barco7, panel, 100,400);
         control.aniadir_barco(barco8, panel, 850,400);
+
+
         control.comenzar_partida();
 
+        establecer_vidas();
     }
+
+    public void establecer_vidas(){
+
+    }
+
 }

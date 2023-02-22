@@ -1,0 +1,10 @@
+#panel_rojo{
+    -fx-background-color: #f16060;
+}
+#panel_azul{
+    -fx-background-color: aqua;
+}
+#panel_intermedio{
+    -fx-background-image: url("../images/fondo_intermedio.jpg");
+    -fx-background-size: cover;
+}
