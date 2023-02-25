@@ -1,9 +1,9 @@
 package com.example.proyectobatalladelmarcoral;
 
 import com.example.proyectobatalladelmarcoral.modelos.Barco;
-import com.example.proyectobatalladelmarcoral.modelos.BarcoInterfaz;
 import com.example.proyectobatalladelmarcoral.modelos.ControlDeJuego;
-import javafx.application.Platform;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -12,8 +12,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 
-import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class JuegoController implements Initializable {
@@ -89,15 +89,6 @@ public class JuegoController implements Initializable {
         Barco barco7;
         Barco barco8;
 
-        BarcoInterfaz barcoInterfaz1;
-        BarcoInterfaz barcoInterfaz2;
-        BarcoInterfaz barcoInterfaz3;
-        BarcoInterfaz barcoInterfaz4;
-        BarcoInterfaz barcoInterfaz5;
-        BarcoInterfaz barcoInterfaz6;
-        BarcoInterfaz barcoInterfaz7;
-        BarcoInterfaz barcoInterfaz8;
-
 
         barco1 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_rojo.png"))),"rojo","acorazado");
         barco3 = new Barco(120,20,3,80,new ImageView(new Image(getClass().getResourceAsStream("images/acorazado_azul.png"))),"azul","acorazado");
@@ -118,6 +109,16 @@ public class JuegoController implements Initializable {
         control.aniadir_barco(barco8, panel, 850,400);
 
         control.comenzar_partida();
+
+        ArrayList<Barco> barcos = control.barcos_partida;
+        for (Barco barco : barcos) {
+            Timeline timeline = new Timeline();
+        }
+    }
+
+    public void establecer_info(Barco barco){
+
+
 
     }
 

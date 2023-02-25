@@ -41,8 +41,8 @@ public class ControlDeJuego {
         }
     }
 
-
     private void disparo_efecuado(Barco barco, Barco barcoAvistado) {
+
         double r = Math.random();
         double dmg;
 
@@ -105,6 +105,7 @@ public class ControlDeJuego {
             System.out.println("¡Equipo rojo ha ganado!");
             detener_partida();
         }
+
     }
 
     private void detener_partida() {
